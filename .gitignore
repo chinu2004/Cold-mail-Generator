@@ -1,0 +1,32 @@
+# Python cache & compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+
+# Secret keys / environment files
+.env
+
+# ChromaDB local data (persistent vector DB)
+vector_db/
+
+# Logs
+*.log
+
+# IDE / editor files
+.vscode/
+.idea/
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Build / packaging files
+*.egg-info/
+dist/
+build/
+
+# Streamlit cache (optional)
+.streamlit/
