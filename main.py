@@ -12,7 +12,7 @@ from langchain_core.output_parsers import JsonOutputParser
 # -----------------------------
 # Load portfolio data
 # -----------------------------
-df = pd.read_csv(r"D:\Llama langchain\my_portfolio.csv")
+df = pd.read_csv("my_portfolio.csv")
 
 client = chromadb.PersistentClient(path="vector_db")
 collection = client.get_or_create_collection(name="my_portfolio")
