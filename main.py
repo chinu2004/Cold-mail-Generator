@@ -25,13 +25,13 @@ if collection.count() == 0:
             metadatas=[{"links": row["Links"]}],
             ids=[str(uuid.uuid4())]
         )
-
+api_key = st.secrets["LLAMA_API_KEY"]
 # -----------------------------
 # LLM setup
 # -----------------------------
 llm = ChatGroq(
     model="llama-3.1-8b-instant",
-    api_key=os.getenv("LLAMA_API_KEY"),
+    api_key=api_key,
     temperature=0.3
 )
 
