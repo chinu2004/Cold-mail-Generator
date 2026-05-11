@@ -30,6 +30,7 @@ Job URL ──► Web Scraper ──► LLM Extraction ──► ChromaDB Query 
 
 ## 📁 Project Structure
 
+section you can paste into your README:
 Cold-mail-Generator/
 │
 ├── app.py                  # Main Streamlit app — scrapes URL, extracts job info, generates email
@@ -41,6 +42,12 @@ Cold-mail-Generator/
 │
 └── .streamlit/
     └── secrets.toml        # API key config (not committed — add to .gitignore)
+And the .gitignore you should have alongside it:
+gitignorevector_db/
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.env
 
 ## Setup & Installation
 
