@@ -4,13 +4,9 @@ An AI-powered tool that generates personalized cold emails by scraping job descr
 
 ---
 
-## Demo
+## Live Demo: https://cold-mail-generator-kyawktdabxojkrrqjgzf6s.streamlit.app/
 
-Enter any job posting URL → Get a tailored cold email in seconds.
-
----
-
-## How It Works
+ ## How It Works
 
 1. **Scrape** – The app fetches the job description page from the provided URL.
 2. **Extract** – A LLaMA 3.1 model (via Groq) parses the page and extracts structured job info: role, required skills, experience, and description.
