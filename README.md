@@ -30,12 +30,17 @@ Job URL ──► Web Scraper ──► LLM Extraction ──► ChromaDB Query 
 
 ## 📁 Project Structure
 
-cold-mail-generator/
+Cold-mail-Generator/
 │
-├── app.py                # Main Streamlit app
-├── my_portfolio.csv      # Your portfolio data (Techstack + Links)
-└── requirements.txt
-
+├── app.py                  # Main Streamlit app — scrapes URL, extracts job info, generates email
+├── my_portfolio.csv        # Your portfolio data (Techstack + Links columns)
+├── requirements.txt        # Python dependencies
+│
+├── vector_db/              # Persisted ChromaDB vector store (auto-created on first run)
+│   └── ...
+│
+└── .streamlit/
+    └── secrets.toml        # API key config (not committed — add to .gitignore)
 
 ## Setup & Installation
 
