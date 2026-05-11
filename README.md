@@ -29,7 +29,8 @@ Job URL ──► Web Scraper ──► LLM Extraction ──► ChromaDB Query 
 ---
 
 ## 📁 Project Structure
- 
+
+```
 Cold-mail-Generator/
 │
 ├── app.py                  # Main Streamlit app — scrapes URL, extracts job info, generates email
@@ -41,46 +42,52 @@ Cold-mail-Generator/
 │
 └── .streamlit/
     └── secrets.toml        # API key config (not committed — add to .gitignore)
- 
+```
 
-## Setup & Installation
+---
+
+## ⚙️ Setup & Installation
 
 ### 1. Clone the repository
 
-bash
-git clone https://github.com/your-username/cold-mail-generator.git
-cd cold-mail-generator
+```bash
+git clone https://github.com/chinu2004/Cold-mail-Generator.git
+cd Cold-mail-Generator
+```
 
-### 2. Install dependencies
+### 2. Create and activate a virtual environment
 
-bash
+```bash
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS / Linux
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
-
-
-### 3. Add your portfolio data
-
-Edit `my_portfolio.csv` with your own projects:
-
-csv
-Techstack,Links
-"React, Node.js, MongoDB",https://github.com/you/project-1
-"Python, FastAPI, PostgreSQL",https://github.com/you/project-2
-
+```
 
 ### 4. Set up your API key
 
 Create a `.streamlit/secrets.toml` file:
 
-toml
+```toml
 LLAMA_API_KEY = "your_groq_api_key_here"
+```
 
 Get your free API key at [console.groq.com](https://console.groq.com).
 
 ### 5. Run the app
 
-bash
+```bash
 streamlit run app.py
-
+```
 
 ## 📋 Requirements
 
